@@ -1,0 +1,32 @@
+{
+  "name": "busca-cep",
+  "version": "1.0.0",
+  "description": "Projeto desenvolvido em HTML, SASS e JS para pesquisar de CEP utilizando a API 'ViaCEP'.",
+  "main": "index.js",
+  "scripts": {
+    "build": "webpack --watch",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dyomenegatti/busca-cep.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/dyomenegatti/busca-cep/issues"
+  },
+  "homepage": "https://github.com/dyomenegatti/busca-cep#readme",
+  "dependencies": {
+    "@fortawesome/fontawesome-free": "^6.5.1",
+    "axios": "^1.6.7",
+    "node-sass": "^9.0.0"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.23.9",
+    "@babel/preset-env": "^7.23.9",
+    "babel-loader": "^9.1.3",
+    "webpack": "^5.90.1",
+    "webpack-cli": "^5.1.4"
+  }
+}

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="node_modules/@fortawesome/fontawesome-free/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="src/styles/vars.css">
+    <link rel="stylesheet" href="src/styles/style.css">
+    <title>Buscar CEP</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Buscar CEP</h1>
+
+        <div class="search-cep">
+            <div class="search-cep__input">
+                <i class="fas fa-search"></i>
+                <input type="number" name="search" id="search-cep" placeholder="Digite o CEP" maxlength="9">
+            </div>
+            <div class="search-cep__btn">
+                <button id="search-cep__button">
+                    Buscar
+                </button>
+                <div class="search-cep__loading" id="loading">
+                    <i class="fas fa-spinner"></i>
+                </div>
+            </div>
+        </div>
+        <span class="search-cep__erro">Apenas números são permitidos!</span>
+
+        <div class="search-img">
+            <img src="src/assets/images/search.svg" alt="Pesquisar CEP" id="search-img__inicio">
+        
+            <div class="search-img__not_found" id="not-found">
+                <p>CEP não encontrado!</p>
+                <img src="src/assets/images/not-found.svg" alt="CEP nao encontrado">
+            </div>
+        </div>
+
+        <div class="result-search">
+            <p><strong>CEP:</strong> <span id="cep"></span></p>
+            <p><strong>Rua:</strong> <span id="logradouro"></span></p>
+            <p><strong>Bairro:</strong> <span id="bairro"></span></p>
+            <p><strong>Complemento:</strong> <span id="complemento"></span></p>
+            <p><strong>Cidade:</strong> <span id="localidade"></span></p>
+            <p><strong>Estado:</strong> <span id="uf"></span></p>
+        </div>
+    </div>
+    <script src="dist/bundle.js"></script>
+</body>
+</html>

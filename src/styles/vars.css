@@ -1,0 +1,10 @@
+:root {
+    /* Font */
+    --font-poppins: 'Poppins', sans-serif;
+
+    /* Colors */
+    --primary: #b81eff;
+    --light-1: #fff;
+    --light-2: #e2e2e2;
+    --erro: #ff0000;
+}

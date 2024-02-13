@@ -1,0 +1,141 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: var(--font-poppins);
+}
+
+body {
+    background-color: var(--light-1);
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;    
+}
+
+h1 {
+    font-weight: 700;
+    letter-spacing: 2px;
+    color: 333333;
+}
+
+.search-cep {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.search-cep__input {
+    padding: 5px 10px;
+    margin-right: 10px;
+    border: 2px solid var(--light-2);
+    border-radius: 4px;
+}
+
+.search-cep__input input {
+    border: none;
+    outline: none;
+    box-shadow: none;
+}
+
+.search-cep__input i {
+    color: var(--light-2);
+}
+
+.search-cep__btn button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    color: var(--light-1);
+    background-color: var(--primary);
+    font-weight: 700;
+    font-size: 0.9rem;
+    cursor: pointer;
+}
+
+.search-cep__loading {
+    display: none;
+    padding: 6px 12px;
+    border: none;
+    border-radius: 4px;
+    color: var(--light-1);
+    background-color: var(--primary);
+    text-align: center;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+.search-cep__loading  i {
+    animation: spin 3s infinite linear; 
+}
+
+.search-cep__erro {
+    font-size: 0.7rem;
+    color: var(--erro);
+    display: none;
+}
+
+.search-img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 3rem;
+}
+
+.search-img img {
+    width: 300px;
+    height: 200px;
+}
+
+.search-img__not_found {
+    display: none;
+}
+
+.search-img__not_found p {
+    text-align: center;
+    padding-bottom: 25px;
+    font-weight: 700;
+    font-size: 1.3rem;
+    font-style: italic;
+}
+
+.result-search {
+    margin-top: 20px;
+    display: none;
+}
+
+.result-search p {
+    border-bottom: 1px solid var(--light-2);
+    padding: 5px;
+}
+
+@media screen and (max-width: 450px) {
+    .search-cep {
+        flex-direction: column;
+    }
+
+    .search-cep__btn {
+        margin: 10px 0px;
+    }
+}
+
+@media screen and (max-width: 280px) {
+    .search-cep__input {
+        width: 70%;
+    }
+
+    .search-cep__input i {
+        display: none;
+    }
+}
